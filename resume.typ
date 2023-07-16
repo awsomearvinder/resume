@@ -75,63 +75,60 @@
 = Technical Skills
 
 #cvcol[
-	== Strong
+	#let skill(name, body) = {
+		heading(level: 4)[#text(size: 12pt)[#name]]
+		body
+	}
+	- #skill("Git")[
+		- Strong understanding of the git data model 
+		  (`rebase`, `merge`, what commits / commit-revs really are).
+		- Understand the pros and cons of different git workflows,
+		  and the differences between them.
+	]
 
-	=== Git
-	I understand Git extremely well. I understand `rebase`, `merge`, how
-	to manipulate the Git commit graph, and the effects of doing so.
-	I have a strong mental model for how Git's data model works.
+	- #skill("Rust")[
+		- My Goto programming language at home.
+		- 5 years of regular use.
+		- Strong understanding of the ecosystem.
+	]
 
-	=== Rust
-	My preferred goto programming language. I try to stay away from
-	using at my current job at WSU due to both the school teaching
-	python, and because the benefits of rust (safety and speed), don't
-	apply to my day to day work. I've been using rust for a long time
-	though, and use it for my personal tools and code.
+	- #skill("Linux")[
+		- Operating System of choice, both on desktop and on servers.
+		- Strong understanding of `bash`, and linux tooling like `systemd init`,
+		 `docker`.
+		- Very command line driven workflow.
+	]
 
-	=== Linux
-	It's my goto operating system of choice. I run it both on my desktop
-	as well as on my servers. I know `bash`, `systemd`'s init, `docker`,
-	and can use them to a decent degree. My workflow is very command
-	line driven.
+	- #skill("Python")[
+		- Primary scripting tool of choice working as a system admin
+		  at my university.
+		- Can work with `poetry`, `pip`, etc.
+	]
 
-	=== Python
-	Unlike `Rust` I dont know the `Python` ecosystem inside and out. I
-	use it a fair bit for scripting at work though, and have used it
-	outside of work as well.
+	- #skill("Nix")[
+		- Use it to manage my servers at home (rather then ansible like I do at work).
+	]
 
-	=== Nix
-	I use Nix to manage my home servers (with `NixOS`), rather then
-	using `ansible` as I do at work. Not much to say here other
-	then I like it.
-]
+	- #skill("Ansible")[
+		- I use it at my job, and can understand it fairly well.
+	]
 
+	- #skill("Networking")[
+		- Understand NAT, Firewall rules, Subnetting, VLANs, etc.
+		- Currently have my routes done in my lab with wireguard &
+		  static routing, want to move to BGP.
+	]
 
-#cvcol[
-	== Working knowledge
+	- #skill("Terraform")[
+		- Sadly, can't use on my own infrastructure due to lack of
+		  good providers.
+		- Have used a little bit, provisioned a few VPS's with it.
+	]
 
-	=== Ansible
-	I use it at my job, and can use it fairly well. At work we
-	use a monorepo rather then `ansible-galaxy`, and just check
-	repos in.
-
-	=== Networking
-	I know enough to be dangerous. I know about NAT, Firwall rules,
-	IPv4, IPv6, subnetting, VLANs, etc. I haven't set much up on my
-	own aside from ip forwarding and a LAN with DHCP and PXE for my
-	servers. I'd like to know more on this topic though, and have 
-	wanted to set up a BGP multi-site network for my homelab over
-	 wireguard & IPv6.
-
-	=== Terraform
-	Sadly, I don't use this on my own infrastructure due to the
-	lack of support for a (good) proxmox provider. I've used
-	it before to configure VPS's on digital ocean, and I've looked
-	into it a fair bit due to my desire to eventually switch
-	over as much as possible.
-
-	=== Github Actions
-	I use actions extensively to validate and deploy code,
-	and my home server is also deployed through CI/CD by
-	my woodpecker instance.
+	- #skill("CI/CD")[
+		- Have used GitHub actions, and woodpecker to validate and deploy
+		  code.
+		- Strong believer in automating as many tasks as humanly possible,
+		  and keeping git as the source of truth.
+	]
 ]
