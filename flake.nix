@@ -19,5 +19,15 @@
         mv resume.pdf $out/
       '';
     };
+    devShells.${system}.default = pkgs.stdenv.mkDerivation {
+      name = "resume-shell";
+      buildInputs = [
+        pkgs.typst
+      ];
+      packages = [
+        pkgs.typst-lsp
+        pkgs.typst-fmt
+      ];
+    };
   };
 }
