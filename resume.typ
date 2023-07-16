@@ -35,33 +35,39 @@
 ]
 
 = Side Projects
+#let project(name, url, body) = {
+	link(url)[#text(size: 12pt)[** #name **]]
+	body
+}
+
 #cvcol[
-	== #link("https://git.public.arvinderd.com/bender/lab")[Linode Lab]
-	My current server hosted on Linode. Currently working on migrating
-	back to my home server. Planning on using this in the future as an IPv6
-	router which forwards traffic through a BGP route advertised over
-	wireguard.
+	- #project("Linode Lab", "https://git.public.arvinderd.com/bender/lab")[
+		- My VPS hosted on linode. Routes back a IPv6 subnet over wireguard
+		- Hosts headscale, a selfhosted tailscale control plane for remote
+		  access.
+		- Previously deployed through CI/CD, currently migrating CI/CD server.
+	]
 
+	- #project("Doas", "https://github.com/awsomearvinder/doas/")[
+		- Project to learn about how `sudo` worked.
+		- Clone of the popular doas project which originated in OpenBSD,
+		  and has a Linux variant as well.
+		- In working order, is usable. No integration with `PAM`, only
+		  worked with local accounts.
+	]
 
-	== #link("https://github.com/awsomearvinder/CNL-creatively-named-launcher")[CNL]
-	CNL was a launcher I made to launch apps. It followed to XDG
-	Desktop Entry specification to figure out where to find,
-	and how to launch, applications. One of my first rust projects,
-	and also one of the few I completed.
+	- #project("Bad Samba", "https://git.public.arvinderd.com/bender/bad-samba")[
+		- My current project to implement the `SMB` protocol.
+		- Goal of file share with LDAP integration.
+		- Samba, with less features and simpler configuration. Focused on file 
+		  share portion of the `SMB` protocol.
+	]
 
-	== #link("https://github.com/awsomearvinder/chip8")[Chip8]
-	My attempt at learning about emulation. There's some flaws in
-	the code as I had a flawed understanding of how code and data
-	was split in Chip8 (it wasn't), and my parser breaks on some
-	valid inputs. The interpreter was never done.
-
-	== #link("https://git.public.arvinderd.com/bender/bad-samba")[Bad Samba]
-	My current project to implement the SMB protocol from Microsoft. Meant
-	to be a subset of samba, only focused on file shares and integrating
-	better with things outside of the Microsoft stack (such as LDAP without
-	Active Directory). The end goal is to create a from scratch simpler
-	`SMB` implementation that focuses on doing a lot less then
-	samba does.
+	- #project("CNL","https://github.com/awsomearvinder/CNL-creatively-named-launcher")[
+		- One of my first ever rust projects.
+		- Launcher to open apps on my system, follows the 
+		  #link("https://specifications.freedesktop.org/desktop-entry-spec/desktop-entry-spec-latest.html")[XDG Desktop Entry Spec]
+	]
 ]
 
 #pagebreak()
