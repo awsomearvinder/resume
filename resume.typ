@@ -41,7 +41,7 @@
 }
 
 #cvcol[
-	- #project("Linode Lab", "https://git.public.arvinderd.com/bender/lab")[
+	- #project("Linode Lab", "https://github.com/awsomearvinder/lab")[
 		- My VPS hosted on linode. Routes back a IPv6 subnet over wireguard
 		- Hosts headscale, a selfhosted tailscale control plane for remote
 		  access.
@@ -56,7 +56,7 @@
 		  worked with local accounts.
 	]
 
-	- #project("Bad Samba", "https://git.public.arvinderd.com/bender/bad-samba")[
+	- #project("Bad Samba", "https://github.com/awsomearvinder/bad-samba")[
 		- My current project to implement the `SMB` protocol.
 		- Goal of file share with LDAP integration.
 		- Samba, with less features and simpler configuration. Focused on file 
