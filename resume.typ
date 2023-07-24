@@ -12,6 +12,14 @@
 #show link: set text(blue)
 
 = Education
+
+#cventry(
+	start: (month: "September", year: 2017),
+	end: (month: "June", year: 2021),
+	role: "Student",
+	place: "White Bear Lake Highschool",
+)[Graduated from White Bear Lake Highscool.]
+
 #cventry(
 	start: (month: "August", year: 2021),
 	end: (month: "", year: "Present"),
