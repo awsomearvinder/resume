@@ -26,9 +26,12 @@
 	role: [Student System Administrator],
 	place: "Winona State University",
 )[
-	Manage debian linux servers using ansible. Created automation
-	for various services such as snapshots. Day to day
-	work involves python, bash, powershell, and ansible.
+	Managed Debian Linux servers using Ansible. Created an automated deployment 	
+	pipeline with proper secret handling for servers, using a self-hosted CI runner.
+	Created a REST API web service to create snapshots for servers prior to upgrades.
+	Managed ~10 servers, hosting a monitoring service, a learning management service
+	for 100+ students per semester, a CI runner, source forge, email
+	relay, and more.
 ]
 
 = Projects
