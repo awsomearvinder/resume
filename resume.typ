@@ -44,14 +44,22 @@
 
 #cvcol[
 	- #project("Code Forge", "https://github.com/awsomearvinder/code-forge")[
-		- A work in progress git code forge, eventually planning on implementing
-		  `forge fed`.
+		- A work in progress source code forge.
+		- Svelte frontend and Rust backend.
+		- Can view and read commit metadata, commit log.
+		- Can browse source of repos.
 	]
 
-	- #project("Doas", "https://github.com/awsomearvinder/doas/")[
+	- #project("doas", "https://github.com/awsomearvinder/doas/")[
 		- Project to learn about how `sudo` worked.
-		- Clone of the popular doas project which originated in OpenBSD,
-		  and has a Linux variant as well.
+		- Clone of the popular doas project which originated in OpenBSD.
+		- Can parse entirety of official `doas` configuration syntax.
+		- Working CI with parser unit tests.
+	]
+
+	- #project("ffmpeg-idler", "https://github.com/awsomearvinder/idle-ffmpeg-runner")[
+		- Runs ffmpeg encodes when user is idle
+		- Pauses ffmpeg process using win32's `debugapi` on user activity.
 	]
 ]
 
