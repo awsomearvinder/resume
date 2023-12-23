@@ -84,26 +84,29 @@
 		body
 	}
 	- #skill("Rust")[
-		- My Goto programming language.
 		- Continuous use since 2018
 		- Strong understanding of the ecosystem.
+		- Can write networking code on top of i.e. HTTPS.
+		- Use low level (potentially unsafe) libraries such as `libgit2`, `windows-rs`.
+		- CLI apps, backend code.
 	]
 
 	- #skill("Python")[
 		- Primary scripting language of choice.
-		- Can work with `poetry`, `pip`, etc.
+		- Web services
+		- Automating linux tasks, manipulating processes and data.
 	]
 	
 	- #skill("Linux")[
-		- Operating System of choice, both on desktop and on servers.
-		- Strong understanding of `bash`, and linux tooling.
+		- Can use, and manage docker containers through e.g. Dockerfile
+		- Bash scripting.
+		- Networking (static routes, NAT, firewall rule management)
+		- Nix package management
 	]
 
-	
 	- #skill("CI/CD")[
-		- Have used GitHub actions, and woodpecker to validate and deploy
-		  code.
-		- Strong believer in automating as many tasks as humanly possible,
-		  and keeping git as the source of truth.
+		- Can automatically deploy code, manage secrets, and test code.
+		- Use CI/CD to automate building releases, run test builds on
+		  all currently developed repos.
 	]
 ]
