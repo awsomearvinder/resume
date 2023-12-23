@@ -24,7 +24,7 @@
 	worked with python, bash, powershell, and ansible.
 ]
 
-= Side Projects
+= Projects
 #let project(name, url, body) = {
 	link(url)[#text(size: 12pt)[** #name **]]
 	body
