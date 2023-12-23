@@ -26,12 +26,14 @@
 	role: [Student System Administrator],
 	place: "Winona State University",
 )[
-	Managed Debian Linux servers using Ansible. Created an automated deployment 	
+	Managed Debian Linux servers using Ansible. Created an automated deployment 
 	pipeline with proper secret handling for servers, using a self-hosted CI runner.
 	Created a REST API web service to create snapshots for servers prior to upgrades.
-	Managed ~10 servers, hosting a monitoring service, a learning management service
-	for 100+ students per semester, a CI runner, source forge, email
-	relay, and more.
+	Hosted servers include: a monitoring service, a learning management service,
+	a CI runner, source forge, email relay, and more.
+
+	Automated TLS certificate rollout using DNS-01 ACME challenges, with azure DNS
+	and letsencrypt. No certificate expiration since rollout.
 ]
 
 = Projects
