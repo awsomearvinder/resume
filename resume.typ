@@ -11,17 +11,6 @@
 #show link: underline
 #show link: set text(blue)
 
-= Education
-
-#cventry(
-	start: (month: "August", year: 2021),
-	end: (month: "", year: "Present"),
-	role: "Student",
-	place: "Winona State University",
-)[
-	Pursuing a B.S. degree for Computer Science in WSU.
-]
-
 = Work Experience
 
 #cventry(
@@ -69,6 +58,17 @@
 		- Launcher to open apps on my system, follows the 
 		  #link("https://specifications.freedesktop.org/desktop-entry-spec/desktop-entry-spec-latest.html")[XDG Desktop Entry Spec]
 	]
+]
+
+= Education
+
+#cventry(
+	start: (month: "August", year: 2021),
+	end: (month: "", year: "Present"),
+	role: "Student",
+	place: "Winona State University",
+)[
+	Pursuing a B.S. degree for Computer Science in WSU.
 ]
 
 #pagebreak()
