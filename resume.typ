@@ -19,9 +19,9 @@
 	role: [Student System Administrator],
 	place: "Winona State University",
 )[
-	Manage debian linux servers using ansible. Created integration for 
-	automation for things such as automated snapshots. Day to day
-	worked with python, bash, powershell, and ansible.
+	Manage debian linux servers using ansible. Created automation
+	for various services such as snapshots. Day to day
+	work involves python, bash, powershell, and ansible.
 ]
 
 = Projects
