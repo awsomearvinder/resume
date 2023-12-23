@@ -47,8 +47,6 @@
 		- Project to learn about how `sudo` worked.
 		- Clone of the popular doas project which originated in OpenBSD,
 		  and has a Linux variant as well.
-		- In working order, is usable. No integration with `PAM`, only
-		  worked with local accounts.
 	]
 ]
 
@@ -78,17 +76,16 @@
 		- Strong understanding of the ecosystem.
 	]
 
-	- #skill("Linux")[
-		- Operating System of choice, both on desktop and on servers.
-		- Strong understanding of `bash`, and linux tooling like `systemd init`,
-		 `docker`.
-		- Very command line driven workflow.
-	]
-
 	- #skill("Python")[
 		- Primary scripting language of choice.
 		- Can work with `poetry`, `pip`, etc.
 	]
+	
+	- #skill("Linux")[
+		- Operating System of choice, both on desktop and on servers.
+		- Strong understanding of `bash`, and linux tooling.
+	]
+
 	
 	- #skill("CI/CD")[
 		- Have used GitHub actions, and woodpecker to validate and deploy
