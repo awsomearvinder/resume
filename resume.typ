@@ -22,7 +22,7 @@
 
 #cventry(
 	start: (month: "October", year: 2021),
-	end: (month: "", year: "Present"),
+	end: (month: "December", year: 2024),
 	role: [Student System Administrator],
 	place: "Winona State University",
 )[
