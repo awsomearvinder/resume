@@ -71,7 +71,9 @@
 	role: "Student",
 	place: "Winona State University",
 )[
-	Pursuing a B.S. degree for Computer Science in WSU.
+	Pursuing a B.S. degree for Computer Science in WSU. Courses include
+	operating systems, database management, AI, data structures and software
+	engineering practices.
 ]
 
 #pagebreak()
