@@ -22,15 +22,6 @@
 	Pursuing a B.S. degree for Computer Science in WSU.
 ]
 
-#cventry(
-	start: (month: "September", year: 2017),
-	end: (month: "June", year: 2021),
-	role: "Student",
-	place: "White Bear Lake Highschool",
-)[
-	Graduated from White Bear Lake Highscool.
-]
-
 = Work Experience
 
 #cventry(
