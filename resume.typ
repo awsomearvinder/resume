@@ -11,6 +11,13 @@
 #show link: underline
 #show link: set text(blue)
 
+= Description
+#cvcol[
+	A Software Developer with a passion for Systems tooling,
+	operating systems, compilers, and security. Adept at diving
+	into how things work, and solving technical problems.
+]
+
 = Work Experience
 
 #cventry(
