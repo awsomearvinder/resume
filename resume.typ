@@ -38,11 +38,9 @@
 }
 
 #cvcol[
-	- #project("Linode Lab", "https://github.com/awsomearvinder/lab")[
-		- My VPS hosted on linode. Routes back a IPv6 subnet over wireguard
-		- Hosts headscale, a selfhosted tailscale control plane for remote
-		  access.
-		- Previously deployed through CI/CD, currently migrating CI/CD server.
+	- #project("Code Forge", "https://github.com/awsomearvinder/code-forge")[
+		- A work in progress git code forge, eventually planning on implementing
+		  `forge fed`.
 	]
 
 	- #project("Doas", "https://github.com/awsomearvinder/doas/")[
@@ -51,19 +49,6 @@
 		  and has a Linux variant as well.
 		- In working order, is usable. No integration with `PAM`, only
 		  worked with local accounts.
-	]
-
-	- #project("Bad Samba", "https://github.com/awsomearvinder/bad-samba")[
-		- My current project to implement the `SMB` protocol.
-		- Goal of file share with LDAP integration.
-		- Samba, with less features and simpler configuration. Focused on file 
-		  share portion of the `SMB` protocol.
-	]
-
-	- #project("CNL","https://github.com/awsomearvinder/CNL-creatively-named-launcher")[
-		- One of my first ever rust projects.
-		- Launcher to open apps on my system, follows the 
-		  #link("https://specifications.freedesktop.org/desktop-entry-spec/desktop-entry-spec-latest.html")[XDG Desktop Entry Spec]
 	]
 ]
 
