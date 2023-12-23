@@ -72,16 +72,9 @@
 		heading(level: 4)[#text(size: 12pt)[#name]]
 		body
 	}
-	- #skill("Git")[
-		- Strong understanding of the git data model 
-		  (`rebase`, `merge`, what commits / commit-revs really are).
-		- Understand the pros and cons of different git workflows,
-		  and the differences between them.
-	]
-
 	- #skill("Rust")[
-		- My Goto programming language at home.
-		- 5 years of regular use.
+		- My Goto programming language.
+		- Continuous use since 2018
 		- Strong understanding of the ecosystem.
 	]
 
@@ -93,31 +86,10 @@
 	]
 
 	- #skill("Python")[
-		- Primary scripting tool of choice working as a system admin
-		  at my university.
+		- Primary scripting language of choice.
 		- Can work with `poetry`, `pip`, etc.
 	]
-
-	- #skill("Nix")[
-		- Use it to manage my servers at home (rather then ansible like I do at work).
-	]
-
-	- #skill("Ansible")[
-		- I use it at my job, and can understand it fairly well.
-	]
-
-	- #skill("Networking")[
-		- Understand NAT, Firewall rules, Subnetting, VLANs, etc.
-		- Currently have my routes done in my lab with wireguard &
-		  static routing, want to move to BGP.
-	]
-
-	- #skill("Terraform")[
-		- Sadly, can't use on my own infrastructure due to lack of
-		  good providers.
-		- Have used a little bit, provisioned a few VPS's with it.
-	]
-
+	
 	- #skill("CI/CD")[
 		- Have used GitHub actions, and woodpecker to validate and deploy
 		  code.
