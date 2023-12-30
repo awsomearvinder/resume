@@ -1,114 +1,160 @@
-#import "moderncv.typ": *
-
-#show: project.with(
-	author: "Arvinder Dhanoa",
-	github: "awsomearvinder",
-	phone: "+01 651 367 9347",
-	email: "ArvinderDhan@gmail.com",
-	website: "www.arvinderd.com"
+#align(center,
+  block[
+    *Jake Ryan* \
+    123-456-7890 $\|$ #link("mailto:jake@su.edu")[jake\@su.edu] $\|$ #link("https://linkedin.com/in/jake")[linkedin.com/in/jake] $\|$ #link("https://github.com/jake")[github.com/jake]
+  ]
 )
 
-#show link: underline
-#show link: set text(blue)
-
-= Description
-#cvcol[
-	A Software Developer with a passion for Systems tooling,
-	operating systems, compilers, and security. Adept at diving
-	into how things work, and solving technical problems.
-]
-
-= Work Experience
-
-#cventry(
-	start: (month: "October", year: 2021),
-	end: (month: "December", year: 2024),
-	role: [Student System Administrator],
-	place: "Winona State University",
-)[
-	Managed Debian Linux servers using Ansible. Created an automated deployment 
-	pipeline with proper secret handling for servers, using a self-hosted CI runner.
-	Created a REST API web service to create snapshots for servers prior to upgrades.
-	Hosted servers include: a monitoring service, a learning management service,
-	a CI runner, source forge, email relay, and more.
-
-	Automated TLS certificate rollout using DNS-01 ACME challenges, with azure DNS
-	and letsencrypt. No certificate expiration since rollout.
-]
-
-= Projects
-#let project(name, url, body) = {
-	link(url)[#text(size: 12pt)[** #name **]]
-	body
+#let heading(text) = {
+  block[
+    = #text
+    #v(-4pt)
+    #line(length: 100%, stroke: 1pt + black)
+  ]
 }
 
-#cvcol[
-	- #project("Code Forge", "https://github.com/awsomearvinder/code-forge")[
-		- A work in progress source code forge.
-		- Svelte frontend and Rust backend.
-		- Can view and read commit metadata, commit log.
-		- Can browse source of repos.
-	]
+#let edu_item(
+  name: "Sample University", 
+  degree: "B.S in Bullshit", 
+  location: "Foo, BA", 
+  date: "Aug. 1600 - May 1750"
+) = {
+  set block(above: 0.7em, below: 0.7em)
+  grid(
+    columns: (3fr, 1fr),
+    align(left)[
+      *#name* \
+      _#degree _
+    ],
+    align(right)[
+      #location \
+      _#date _
+    ]
+  )
+}
 
-	- #project("doas", "https://github.com/awsomearvinder/doas/")[
-		- Project to learn about how `sudo` worked.
-		- Clone of the popular doas project which originated in OpenBSD.
-		- Can parse entirety of official `doas` configuration syntax.
-		- Working CI with parser unit tests.
-	]
+#let exp_item(
+  name: "Sample Workplace",
+  role: "Worker",
+  date: "June 1837 - May 1845",
+  location: "Foo, BA",
+  ..points
+) = {
+    set block(above: 0.7em, below: 0.7em)
+    grid(
+      columns: (3fr, 1fr),
+      align(left)[
+        *#role* \
+        _#name _
+      ],
+      align(right)[
+        #date \
+        _#location _
+      ]
+    )
+    list(..points)
+}
 
-	- #project("ffmpeg-idler", "https://github.com/awsomearvinder/idle-ffmpeg-runner")[
-		- Runs ffmpeg encodes when user is idle
-		- Pauses ffmpeg process using win32's `debugapi` on user activity.
-	]
-]
+#let project_item(
+  name: "Example Project",
+  skills: "Programming Language 1, Database3",
+  date: "May 1234 - June 4321",
+  ..points
+) = {
+  set block(above: 0.7em, below: 0.7em)
+  [*#name* | _#skills _
+   #h(1fr) #date]
+  list(..points)
+}
 
-= Education
+#let skill_item(
+  category: "Skills",
+  skills: "Balling, Yoga, Valorant",
+) = {
+  set block(above: 0.7em, below: 0.7em)
+  block[*#category*: #skills]
+}
 
-#cventry(
-	start: (month: "August", year: 2021),
-	end: (month: "", year: "Present"),
-	role: "Student",
-	place: "Winona State University",
-)[
-	Pursuing a B.S. degree for Computer Science in WSU. Courses include
-	operating systems, database management, AI, data structures and software
-	engineering practices.
-]
+#heading[Education]
+#edu_item(
+  name: "Southwestern University",
+  degree: "Bachelor of Arts in Computer Science, Minor in Business",
+  location: "Georgetown, TX",
+  date: "Aug. 2018 - May 2021"
+)
+#edu_item(
+  name: "Blinn College",
+  degree: "Associate's in Liberal Arts",
+  location: "Bryan, TX",
+  date: "Aug. 2014 - May 2018"
+)
 
-#pagebreak()
+#heading[Experience]
+#exp_item(
+  role: "Undergraduate Research Assistant",
+  name: "Texas A&M University",
+  location: "College Station, TX",
+  date: "June 2020 - Present",
+  [Developed a REST API using FastAPI and PostgreSQL to store data from learning management systems],
+  [Developed a full-stack web application using Flask, React, PostgreSQL and Docker to analyze GitHub data],
+  [Explored ways to visualize GitHub collaboration in a classroom setting]
+)
+#exp_item(
+  role: "Information Technology Support Specialist",
+  name: "Southwestern University",
+  location: "Georgetown, TX",
+  date: "Sep. 2018 - Present",
+  [Communicate with managers to set up campus computers used on campus],
+  [Assess and troubleshoot computer problems brought by students, faculty and staff],
+  [Maintain upkeep of computers, classroom equipment, and 200 printers across campus]
+)
+#exp_item(
+  role: "Artificial Intelligence Research Assistant",
+  name: "Southwestern University",
+  location: "Georgetown, TX",
+  date: "May 2019 - July 2019",
+  [Explored methods to generate video game dungeons based off of #emph[The Legend of Zelda]],
+  [Developed a game in Java to test the generated dungeons],
+  [Contributed 50K+ lines of code to an established codebase via Git],
+  [Conducted  a human subject study to determine which video game dungeon generation technique is enjoyable],
+  [Wrote an 8-page paper and gave multiple presentations on-campus],
+  [Presented virtually to the World Conference on Computational Intelligence]
+)
 
-= Technical Skills
+#heading("Projects")
+#project_item(
+  name: "Gitlytics",
+  skills: "Python, Flask, React, PostgreSQL, Docker",
+  date: "June 2020 - Present",
+  [Developed a full-stack web application using with Flask serving a REST API with React as the frontend],
+  [Implemented GitHub OAuth to get data from user’s repositories],
+  [Visualized GitHub data to show collaboration],
+  [Used Celery and Redis for asynchronous tasks]
+)
+#project_item(
+  name: "Simple Paintball",
+  skills: "Spigot API, Java, Maven, TravisCI, Git",
+  date: "May 2018 - May 2020",
+  [Developed a Minecraft server plugin to entertain kids during free time for a previous job],
+  [Published plugin to websites gaining 2K+ downloads and an average 4.5/5-star review],
+  [Implemented continuous delivery using TravisCI to build the plugin upon new a release],
+  [Collaborated with Minecraft server administrators to suggest features and get feedback about the plugin]
+)
 
-#cvcol[
-	#let skill(name, body) = {
-		heading(level: 4)[#text(size: 12pt)[#name]]
-		body
-	}
-	- #skill("Rust")[
-		- Continuous use since 2018
-		- Strong understanding of the ecosystem.
-		- Can write networking code on top of i.e. HTTPS.
-		- Use low level (potentially unsafe) libraries such as `libgit2`, `windows-rs`.
-		- CLI apps, backend code.
-	]
-
-	- #skill("Python")[
-		- Primary scripting language of choice.
-		- Web services
-		- Automating linux tasks, manipulating processes and data.
-	]
-	
-	- #skill("Linux")[
-		- Can use, and manage docker containers through e.g. Dockerfile
-		- Bash scripting.
-		- Networking (static routes, NAT, firewall rule management)
-		- Nix package management
-	]
-
-	- #skill("CI/CD")[
-		- Can automatically deploy code, manage secrets, and test code.
-		- Use CI/CD to automate building releases, run test builds on
-		  all currently developed repos.
-	]
-]
+#heading("Technical Skills")
+#skill_item(
+  category: "Languages",
+  skills: "Java, Python, C/C++, SQL (Postgres), JavaScript, HTML/CSS, R"
+)
+#skill_item(
+  category: "Frameworks",
+  skills: "React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI"
+)
+#skill_item(
+  category: "Developer Tools",
+  skills: "Git, Docker, TravisCI, Google Cloud Platform, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse"
+)
+#skill_item(
+  category: "Libraries",
+  skills: "pandas, NumPy, Matplotlib"
+)
