@@ -32,6 +32,21 @@
 
 #resume_heading("Projects")
 #project_item(
+  name: "Code Forge",
+  skills: "Node.JS, Svelte, Git",
+  date: "2023 - Present",
+  [A code forge like GitHub, based on a more Gerrit/Phabricator like rebase workflow.],
+  [Uses Svelte for UI, Rest API for interacting with the Git Storage Manager written in rust.],
+)
+#project_item(
+  name: "pcparadise discord bot",
+  skills: "Python, Asynchronous Programming",
+  date: "2023 - 2024",
+  [A discord bot made for a discord server with over 15,000 members.],
+  [A collaborative effort, with multiple contributors.],
+  [Implemented linting and formatting checks in Github CI.]
+)
+#project_item(
   name: "ebpf-clat",
   skills: "eBPF, Rust, Networking, Linux",
   date: "2025 - Present",
@@ -44,22 +59,6 @@
   date: "2020 - 2021",
   [A self made doas (sudo-like tool) clone from scratch, used to learn parser combinators],
   [Compliant with real doas configuration],
-)
-#project_item(
-  name: "pcparadise discord bot",
-  skills: "Python, Asynchronous Programming",
-  date: "2023 - 2024",
-  [A discord bot made for a discord server with over 15,000 members.],
-  [A collaborative effort, with multiple contributors.],
-  [Implemented linting and formatting checks in Github CI.]
-)
-
-#project_item(
-  name: "Code Forge",
-  skills: "Node.JS, Svelte, Git",
-  date: "2023 - 2024",
-  [A code forge like GitHub, based on a more Gerrit/Phabricator like rebase workflow.],
-  [Uses Svelte for UI, Rest API for interacting with the Git Storage Manager written in rust.],
 )
 
 #resume_heading("Technical Skills")
