@@ -47,6 +47,12 @@
   [Implemented linting and formatting checks in Github CI.]
 )
 #project_item(
+  name: "remarkable-zotero-sync",
+  skills: "REST, Rust",
+  date: "2025 - Present",
+  [A WIP tool that reverse engineers remarkable's API, and syncs content from zotero to Remarkable]
+)
+#project_item(
   name: "ebpf-clat",
   skills: "eBPF, Rust, Networking, Linux",
   date: "2025 - Present",
