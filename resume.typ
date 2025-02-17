@@ -3,93 +3,79 @@
 #show: resume
 
 #header(
-  name: "Jake Ryan",
-  phone: "123-456-7890",
-  email: "jake@su.edu",
-  linkedin: "linkedin.com/in/jake",
-  site: "github.com/jake",
+  name: "Arvinder Dhanoa",
+  phone: "651-367-9347",
+  email: "ArvinderDhan@gmail.com",
+  linkedin: "linkedin.com/in/arvinder-dhanoa-3bb08b223/",
+  site: "arvinderd.com",
+  github: "github.com/awsomearvinder"
 )
 
 #resume_heading[Education]
 #edu_item(
-  name: "Southwestern University",
-  degree: "Bachelor of Arts in Computer Science, Minor in Business",
-  location: "Georgetown, TX",
-  date: "Aug. 2018 - May 2021"
-)
-#edu_item(
-  name: "Blinn College",
-  degree: "Associate's in Liberal Arts",
-  location: "Bryan, TX",
-  date: "Aug. 2014 - May 2018"
+  name: "Winona State University",
+  degree: "Bachelor's of Science in Computer Science",
+  location: "Winona, MN",
+  date: "Aug. 2020 - May 2025"
 )
 
 #resume_heading[Experience]
 #exp_item(
-  role: "Undergraduate Research Assistant",
-  name: "Texas A&M University",
-  location: "College Station, TX",
-  date: "June 2020 - Present",
-  [Developed a REST API using FastAPI and PostgreSQL to store data from learning management systems],
-  [Developed a full-stack web application using Flask, React, PostgreSQL and Docker to analyze GitHub data],
-  [Explored ways to visualize GitHub collaboration in a classroom setting]
-)
-#exp_item(
-  role: "Information Technology Support Specialist",
-  name: "Southwestern University",
-  location: "Georgetown, TX",
-  date: "Sep. 2018 - Present",
-  [Communicate with managers to set up campus computers used on campus],
-  [Assess and troubleshoot computer problems brought by students, faculty and staff],
-  [Maintain upkeep of computers, classroom equipment, and 200 printers across campus]
-)
-#exp_item(
-  role: "Artificial Intelligence Research Assistant",
-  name: "Southwestern University",
-  location: "Georgetown, TX",
-  date: "May 2019 - July 2019",
-  [Explored methods to generate video game dungeons based off of #emph[The Legend of Zelda]],
-  [Developed a game in Java to test the generated dungeons],
-  [Contributed 50K+ lines of code to an established codebase via Git],
-  [Conducted  a human subject study to determine which video game dungeon generation technique is enjoyable],
-  [Wrote an 8-page paper and gave multiple presentations on-campus],
-  [Presented virtually to the World Conference on Computational Intelligence]
+  role: "Student System Administrator",
+  name: "Winona State University",
+  location: "Winona, MN",
+  date: "Oct. 2020 - May 2025",
+  [Provisioned and Managed Linux servers for University services including email relay, CMS, and more.],
+  [Automated updates and snappshotting on Linux servers using custom-made rust REST APIs],
+  [Rolled out Ansible, Gitea, and CI/CD based deployment and updates.]
 )
 
 #resume_heading("Projects")
 #project_item(
-  name: "Gitlytics",
-  skills: "Python, Flask, React, PostgreSQL, Docker",
-  date: "June 2020 - Present",
-  [Developed a full-stack web application using with Flask serving a REST API with React as the frontend],
-  [Implemented GitHub OAuth to get data from user’s repositories],
-  [Visualized GitHub data to show collaboration],
-  [Used Celery and Redis for asynchronous tasks]
+  name: "ebpf-clat",
+  skills: "eBPF, Rust, Networking, Linux",
+  date: "2025 - Present",
+  [An IPv6 transition mechanism developed using eBPF, translates IPv4 TCP/UDP packets to IPv6],
+  [Allows IPv4 applications to communicate over an IPv6 network]
 )
 #project_item(
-  name: "Simple Paintball",
-  skills: "Spigot API, Java, Maven, TravisCI, Git",
-  date: "May 2018 - May 2020",
-  [Developed a Minecraft server plugin to entertain kids during free time for a previous job],
-  [Published plugin to websites gaining 2K+ downloads and an average 4.5/5-star review],
-  [Implemented continuous delivery using TravisCI to build the plugin upon new a release],
-  [Collaborated with Minecraft server administrators to suggest features and get feedback about the plugin]
+  name: "doas",
+  skills: "Rust, Linux",
+  date: "2020 - 2021",
+  [A self made doas (sudo-like tool) clone from scratch, used to learn parser combinators],
+  [Compliant with real doas configuration],
+)
+#project_item(
+  name: "pcparadise discord bot",
+  skills: "Python, Asynchronous Programming",
+  date: "2023 - 2024",
+  [A discord bot made for a discord server with over 15,000 members.],
+  [A collaborative effort, with multiple contributors.],
+  [Implemented linting and formatting checks in Github CI.]
+)
+
+#project_item(
+  name: "Code Forge",
+  skills: "Node.JS, Svelte, Git",
+  date: "2023 - 2024",
+  [A code forge like GitHub, based on a more Gerrit/Phabricator like rebase workflow.],
+  [Uses Svelte for UI, Rest API for interacting with the Git Storage Manager written in rust.],
 )
 
 #resume_heading("Technical Skills")
 #skill_item(
   category: "Languages",
-  skills: "Java, Python, C/C++, SQL (Postgres), JavaScript, HTML/CSS, R"
+  skills: "Rust, C, C++, Python, Javascript, SQL, Java"
 )
 #skill_item(
   category: "Frameworks",
-  skills: "React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI"
+  skills: "Node.JS, Flask, eBPF, Svelte, React"
 )
 #skill_item(
   category: "Developer Tools",
-  skills: "Git, Docker, TravisCI, Google Cloud Platform, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse"
+  skills: "Git, Github, Gitea, Github Actions, Vim, Visual Studio Code, Linux, Docker, NixOS, Ansible"
 )
 #skill_item(
-  category: "Libraries",
-  skills: "pandas, NumPy, Matplotlib"
+  category: "Misc",
+  skills: "Proxmox VE, Linode, Wireguard, LDAP",
 )
