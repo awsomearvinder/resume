@@ -26,7 +26,7 @@
   location: "Winona, MN",
   date: "Oct. 2020 - May 2025",
   [Provisioned and Managed Linux servers for University services including email relay, CMS, and more.],
-  [Automated updates and snappshotting on Linux servers using custom-made rust REST APIs],
+  [Automated updates and snappshotting on Linux servers using custom-made python REST APIs],
   [Rolled out Ansible, Gitea, and CI/CD based deployment and updates.]
 )
 
