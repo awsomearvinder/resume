@@ -40,9 +40,10 @@
 )
 #project_item(
   name: "pcparadise discord bot",
-  skills: "Python, Asynchronous Programming",
+  skills: "Python, Asynchronous Programming, SQLite",
   date: "2023 - 2024",
   [A discord bot made for a discord server with over 15,000 members.],
+  [Uses Python and asyncio, along with sqlite for it's datastore.],
   [A collaborative effort, with multiple contributors.],
   [Implemented linting and formatting checks in Github CI.]
 )
@@ -57,7 +58,8 @@
   skills: "eBPF, Rust, Networking, Linux",
   date: "2025 - Present",
   [An IPv6 transition mechanism developed using eBPF, translates IPv4 TCP/UDP packets to IPv6],
-  [Allows IPv4 applications to communicate over an IPv6 network]
+  [Allows IPv4 applications to communicate over an IPv6 network using a NAT64 gateway],
+  [Simplifies network configuration by only having one set of firewall rules, IP addresses, etc.],
 )
 #project_item(
   name: "doas",
@@ -65,6 +67,7 @@
   date: "2020 - 2021",
   [A self made doas (sudo-like tool) clone from scratch, used to learn parser combinators],
   [Compliant with real doas configuration],
+  [Allows controlled privilege escalation on Linux Servers.]
 )
 
 #resume_heading("Technical Skills")
