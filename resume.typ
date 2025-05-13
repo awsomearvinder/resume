@@ -16,15 +16,15 @@
   name: "Winona State University",
   degree: "Bachelor's of Science in Computer Science",
   location: "Winona, MN",
-  date: "Aug. 2020 - May 2025"
+  date: "Aug. 2021 - May 2025"
 )
 
 #resume_heading[Experience]
 #exp_item(
-  role: "Student System Administrator",
+  role: "Lead Student System Administrator",
   name: "Winona State University",
   location: "Winona, MN",
-  date: "Oct. 2020 - May 2025",
+  date: "Oct. 2021 - May 2025",
   [Provisioned and Managed Linux servers for University services including email relay, CMS, and more.],
   [Automated updates and snappshotting on Linux servers using custom-made python REST APIs],
   [Rolled out Ansible, Gitea, and CI/CD based deployment and updates.]
@@ -33,25 +33,11 @@
 #resume_heading("Projects")
 #project_item(
   name: "Code Forge",
-  skills: "Node.JS, Svelte, Git",
+  skills: "Git, Rust, htmx",
   date: "2023 - Present",
   [A code forge like GitHub, based on a more Gerrit/Phabricator like rebase workflow.],
-  [Uses Svelte for UI, Rest API for interacting with the Git Storage Manager written in rust.],
-)
-#project_item(
-  name: "pcparadise discord bot",
-  skills: "Python, Asynchronous Programming, SQLite",
-  date: "2023 - 2024",
-  [A discord bot made for a discord server with over 15,000 members.],
-  [Uses Python and asyncio, along with sqlite for it's datastore.],
-  [A collaborative effort, with multiple contributors.],
-  [Implemented linting and formatting checks in Github CI.]
-)
-#project_item(
-  name: "remarkable-zotero-sync",
-  skills: "REST, Rust",
-  date: "2025 - Present",
-  [A WIP tool that reverse engineers remarkable's API, and syncs content from zotero to Remarkable]
+  [Used to use Svelte for UI, Rest API for interacting with the Git Storage Manager written in rust.],
+  [Moved over to htmx + rust backend],
 )
 #project_item(
   name: "ebpf-clat",
