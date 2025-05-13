@@ -40,6 +40,22 @@
   [Moved over to htmx + rust backend],
 )
 #project_item(
+  name: "Pantheon-splunk-logger",
+  skills: "Splunk, Python, Linux",
+  date: "2024",
+  [Implement a logger which worked over ssh and python, monitoring for changes in remote files],
+  [Pushed logs to Splunk],
+  [Written in python, daemon implementing exponential backoff],
+)
+#project_item(
+  name: "checkpointing api",
+  skills: "Python, Powershell, AD",
+  date: "2024",
+  [API that used Active Directory to authenticate against the server],
+  [Used to create snapshots before updates by our CI/CD system],
+  [Offloaded tasks to self written powershell script, due to lack of hypervisor API],
+)
+#project_item(
   name: "ebpf-clat",
   skills: "eBPF, Rust, Networking, Linux",
   date: "2025 - Present",
