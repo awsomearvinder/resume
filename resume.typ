@@ -40,7 +40,7 @@
   [Moved over to htmx + rust backend],
 )
 #project_item(
-  name: "Pantheon-splunk-logger",
+  name: "Pantheon splunk logger",
   skills: "Splunk, Python, Linux",
   date: "2024",
   [Implement a logger which worked over ssh and python, monitoring for changes in remote files],
@@ -56,7 +56,7 @@
   [Offloaded tasks to self written powershell script, due to lack of hypervisor API],
 )
 #project_item(
-  name: "ebpf-clat",
+  name: "ebpf clat",
   skills: "eBPF, Rust, Networking, Linux",
   date: "2025 - Present",
   [An IPv6 transition mechanism developed using eBPF, translates IPv4 TCP/UDP packets to IPv6],
